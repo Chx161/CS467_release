@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/constants.dart';
 import 'package:flutter_app/screens/home/home_screen.dart';
+import 'package:flutter_app/screens/home/landing_screen.dart';
 import 'package:flutter_app/screens/home/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -49,7 +50,7 @@ class _MyAppState extends State<MyApp> {
       ),
       // home: MyHomePage(title: 'Flutter Demo Page'),
       // home: HomeScreen(),
-      home: (_loginStatus != null && _loginStatus > 0)?HomeScreen():LoginScreen(),
+      home: (_loginStatus != null && _loginStatus > 0)?HomeScreen():LandingScreen(),
 
     );
   }
